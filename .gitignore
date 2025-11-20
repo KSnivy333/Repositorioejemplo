@@ -23,7 +23,8 @@ coverage
 *.njsproj
 *.sln
 *.sw?
-
+.git
+node_modules
 *.tsbuildinfo
 
 .eslintcache
