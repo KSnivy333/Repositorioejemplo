@@ -20,5 +20,5 @@ jobs:
 
       - name: Deploy via SCP
         run: |
-          ssh -o StrictHostKeyChecking=no ${{ secrets.USERNAME }}@${{ secrets.HOST }} "rm -rf /ejemplo/${{ secrets.USERNAME }}/**"
-          scp -o StrictHostKeyChecking=no -r ./ ${{ secrets.USERNAME }}@${{ secrets.HOST }}:/ejemplo/${{ secrets.USERNAME }}/
+          ssh -i ~/.ssh/ejemplo -o StrictHostKeyChecking=no ${{ secrets.USERNAME }}@${{ secrets.HOST }} "rm -rf /ejemplo/${{ secrets.USERNAME }}/**"
+          scp -i ~/.ssh/ejemplo -o StrictHostKeyChecking=no -r ./ ${{ secrets.USERNAME }}@${{ secrets.HOST }}:/ejemplo/${{ secrets.USERNAME }}/
