@@ -15,8 +15,8 @@ jobs:
       - name: Prepare SSH key
         run: |
           mkdir -p ~/.ssh
-          echo "${{ secrets.SSH_KEY }}" > ~/.ssh/1.ppk
-          chmod 600 ~/.ssh/1.ppk
+          echo "${{ secrets.SSH_KEY }}" > ~/.ssh/ejemplo
+          chmod 600 ~/.ssh/ejemplo
 
       - name: Deploy via SCP
         run: |
