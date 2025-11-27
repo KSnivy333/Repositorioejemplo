@@ -3,10 +3,6 @@ import Home from './views/Home.vue';
 </script>
 
 <template>
-<h1>Sigo odiando vue</h1>
-</template>
-
-<template>
   <body>
     <h1>Odio vue2</h1>
   </body>
