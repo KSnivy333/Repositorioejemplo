@@ -1,12 +1,11 @@
 <script setup>
-
+import Home from './views/Home.vue';
 </script>
 
 <template>
-  <body>
-    <h1>Odio vue2</h1>
-  </body>
+  <Home />
 </template>
+
 
 <style scoped>
 header {

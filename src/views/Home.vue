@@ -4,6 +4,8 @@
     <HeaderComponent />
 
     <h1>hola</h1>
+    <h2>que tal </h2>
+    <h3>13</h3>
 </template>
 
 <style>
