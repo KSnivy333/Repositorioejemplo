@@ -3,9 +3,9 @@
 <template>
     <HeaderComponent />
 
-    <h1>hola</h1>
+    <h1>hola1</h1>
     <h2>que tal </h2>
-    <h3>13</h3>
+    <h3>0</h3>
 </template>
 
 <style>
