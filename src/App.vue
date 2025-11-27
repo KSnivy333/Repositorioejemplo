@@ -1,9 +1,9 @@
 <script setup>
-import Home from './views/Home.vue';
+
 </script>
 
 <template>
-  <body>
+  <body style="background-color: aqua;">
     <h1>Odio vue2</h1>
   </body>
 </template>
