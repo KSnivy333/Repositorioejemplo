@@ -3,7 +3,7 @@
 <template>
     <HeaderComponent />
 
-    <h1>hola</h1>
+    <h2>hola123</h2>
 </template>
 
 <style>
