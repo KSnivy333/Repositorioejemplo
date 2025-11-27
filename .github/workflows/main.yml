@@ -35,13 +35,16 @@ jobs:
       - name: Setup SSH
         run: |
           mkdir -p ~/.ssh
-          # Limpia y crea la clave SSH
+          # Limpiamos la clave SSH de posibles caracteres '\r' y la guardamos
           echo "${{ secrets.SSH_KEY }}" | tr -d '\r' > ~/.ssh/id_ed25519
           chmod 600 ~/.ssh/id_ed25519
-          # Deshabilita la verificación de clave de host
-          echo -e "Host *\n  StrictHostKeyChecking no\n  IdentitiesOnly yes" > ~/.ssh/config
+          
+          # SOLUCIÓN: Usamos espacios normales y tabulaciones para asegurar el formato SSH
+          echo "Host *" > ~/.ssh/config
+          echo "    StrictHostKeyChecking no" >> ~/.ssh/config # Nótese el uso de '    ' (4 espacios)
+          echo "    IdentitiesOnly yes" >> ~/.ssh/config # Y '>>' para agregar líneas
+          
           chmod 600 ~/.ssh/config
-
       # --- Despliegue SCP ---
       - name: Deploy compiled files via SCP
         run: |
