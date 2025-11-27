@@ -1,9 +1,6 @@
-// src/main.js
-import { createApp } from 'vue';
-import App from './App.vue';
+import './assets/main.css'
 
-// ... (posiblemente importaciones de router, pinia, etc.)
+import { createApp } from 'vue'
+import App from './App.vue'
 
-createApp(App)
-  // .use(router) // Si tienes Vue Router
-  .mount('#app'); // Monta App.vue en el div con id="app"
+createApp(App).mount('#app')
