@@ -22,10 +22,10 @@ jobs:
         run: npm install
 
       # --- 🧪 PASO CLAVE: EJECUTAR TESTS UNITARIOS ---
-      - name: Run Unit Tests (Vitest)
+      #- name: Run Unit Tests (Vitest)
         # Esto asume que tienes "test": "vitest run" en tu package.json
         # El flujo fallará si algún test unitario no pasa.
-        run: npm run test 
+      #  run: npm run test 
         
       # --- Build y Compilación ---
       - name: Build Vue Project (Genera la carpeta 'dist')

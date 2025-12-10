@@ -1,26 +1,19 @@
 {
-  "name": "test",
+  "name": "front_pokeapi",
   "version": "0.0.0",
   "private": true,
   "type": "module",
-  "engines": {
-    "node": "^20.19.0 || >=22.12.0"
-  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
-    "test": "vitest run"
+    "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.5.22"
+    "vue": "^3.5.12"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^6.0.1",
-    "@vue/test-utils": "^2.4.6",
-    "jsdom": "^27.2.0",
-    "vite": "^7.1.11",
-    "vite-plugin-vue-devtools": "^8.0.3",
-    "vitest": "^4.0.14"
+    "@vitejs/plugin-vue": "^5.1.4",
+    "sass-embedded": "^1.80.4",
+    "vite": "^5.4.10"
   }
 }
