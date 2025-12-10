@@ -28,7 +28,7 @@ jobs:
         run: npm run test 
         
       # --- Build y Compilación ---
-      - name: Build Vue Project (Genera la carpeta 'dist')
+      - name: Build Vue Project1 (Genera la carpeta 'dist')
         run: npm run build 
 
       # --- Configuración de SSH para Despliegue ---
